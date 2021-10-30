@@ -1,0 +1,17 @@
+{% extends 'home.html' %}
+
+{% block title %}blog{% endblock %}
+
+{%- block content %}
+			<form method=post>
+				<fieldset>
+					<legend>Auth</legend>
+
+					<input type=text     name=nick placeholder=Nick required>
+					<input type=password name=pass placeholder=Pass required><br>
+					
+					<input type=reset>
+					<input type=submit>
+				</fieldset>
+			</form>
+{%- endblock %}
